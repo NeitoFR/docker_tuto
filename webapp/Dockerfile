@@ -6,4 +6,6 @@ WORKDIR /opt/app
 
 EXPOSE 9002
 
-CMD npm install -g nodemon bower && npm install && npm starts
+RUN echo '{ "allow_root": true }' > /root/.bowerrc
+
+CMD npm install -g nodemon bower && bower install && npm install && npm start

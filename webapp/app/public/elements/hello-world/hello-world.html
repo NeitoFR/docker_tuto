@@ -1,27 +1,25 @@
-<link rel='import' href='../../bower_components/polymer/polymer-element.html'>
-<!-- Bower Components -->
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
-<!-- Shared CSS -->
-<link rel="import" href="../shared-styles.html">
-<!-- Custom Elements -->
-<link rel="import" href="../hello-world/hello-world.html">
-<dom-module id='hello-world'>
+<dom-module id="hello-world">
     <template>
-        <style include='shared-styles'>
+        <style>
+        
         </style>
-        <h1>Hello World form a Polymer Component</h1>
+
+        <h1>Hello {{username}}</h1>
     </template>
     <script>
         class HelloWorld extends Polymer.Element {
             static get is() {
-                return 'hello-world'
+                return "hello-world";
             }
             static get properties() {
                 return {
+                    username: {
+                        type: String, 
+                        value: "Willem"
+                    }
                 }
-            }
-            ready() {
-                console.log("Hello World");
             }
         }
         window.customElements.define(HelloWorld.is, HelloWorld);
