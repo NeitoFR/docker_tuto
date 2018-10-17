@@ -1,0 +1,29 @@
+<link rel='import' href='../../bower_components/polymer/polymer-element.html'>
+<!-- Bower Components -->
+
+<!-- Shared CSS -->
+<link rel="import" href="../shared-styles.html">
+<!-- Custom Elements -->
+<link rel="import" href="../hello-world/hello-world.html">
+<dom-module id='hello-world'>
+    <template>
+        <style include='shared-styles'>
+        </style>
+        <h1>Hello World form a Polymer Component</h1>
+    </template>
+    <script>
+        class HelloWorld extends Polymer.Element {
+            static get is() {
+                return 'hello-world'
+            }
+            static get properties() {
+                return {
+                }
+            }
+            ready() {
+                console.log("Hello World");
+            }
+        }
+        window.customElements.define(HelloWorld.is, HelloWorld);
+    </script>
+</dom-module>

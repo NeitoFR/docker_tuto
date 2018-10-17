@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "authors": [
+    "Neito <willem.houm@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.6.1",
+    "paper-input": "PolymerElements/paper-input#^2.2.3",
+    "iron-icon": "PolymerElements/iron-icon#^2.1.0",
+    "iron-icons": "PolymerElements/iron-icons#^2.1.1",
+    "paper-button": "^2.1.0"
+  }
+}

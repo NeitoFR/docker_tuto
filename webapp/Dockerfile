@@ -6,4 +6,4 @@ WORKDIR /opt/app
 
 EXPOSE 9002
 
-CMD npm install && npm start
+CMD npm install -g nodemon bower && npm install && npm starts
